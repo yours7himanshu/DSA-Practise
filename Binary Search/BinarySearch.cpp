@@ -42,4 +42,6 @@ int main()
 
     cout << "Element found at index: " << index1 << endl;
     cout << "Element found at index: " << index2 << endl;
+
+   
 }
