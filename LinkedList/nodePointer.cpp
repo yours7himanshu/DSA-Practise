@@ -16,14 +16,19 @@ int main (){
     Node * b = new Node(20);
     Node * c = new Node(30);
     Node * d = new Node(40);
-    Node * e = new Node(50);
+   
 
     a->next = b;
     b->next = c;
-    c->next = c;
-    d->next = c;
+    c->next = d;
+   
 
 
-
+   Node* temp = a;
+   while(temp!=NULL)
+   {
+    cout<<temp->data<<" ";
+    temp = temp->next;
+   }
 
 }
