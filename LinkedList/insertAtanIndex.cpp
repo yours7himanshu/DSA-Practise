@@ -90,6 +90,30 @@ class LinkedList {
         }
         cout<<endl;
     }
+
+
+    // this function is made for getting the value present in the index
+    void getValueAtIndex(int index){
+
+        if(index < 0|| index > size) {
+        cout<<"invalid index no node is present at this index"<<endl;
+        }
+        else {
+            Node * temp = head;
+            for ( int i = 1;i<= index;i++)
+            { 
+    
+                temp = temp->next;
+            
+            }
+    
+            cout << "data in linkedlist  is :" <<temp->data << endl;;
+            cout << "address of this linkedlist is :"<< temp<< endl;
+            cout << endl;
+    
+        }
+        }
+      
 };
 
 
@@ -106,8 +130,14 @@ int main ()
     ll.insertAtEnd(77);
     ll.insertAtHead(38);
     ll.insertAtIndex(4,89);
-
     ll.display();
     cout<<ll.size<<endl;
+
+
+    // directly taking from the user 
+    int index;
+    cout<<"Enter the value of the index that u want to get : "<<endl;
+    cin>>index;
+    ll.getValueAtIndex(index);
 
 }
