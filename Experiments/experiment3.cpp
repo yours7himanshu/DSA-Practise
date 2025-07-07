@@ -1,25 +1,19 @@
 #include<iostream>
 using namespace std;
-int count = 0;
 
-void callingName( string name  ){
-
-
-    while(count !=5){
-        cout<<name<<endl;
-        count ++;
-        callingName(name);
+void printName( int i , int times  ){
+    if(i>times) return;
+    else{
+        cout<<"Himanshu Dinkar"<<endl;
+        printName(i+1,times);
     }
-
-    return;
-
-
 
 
 }
 
 int main (){
-    string name = "himanshu dinkar";
-    callingName(name);
-
+    int times;
+    cout<< "Enter how many times the name should be printed";
+    cin>>times;
+    printName(1, times);
 }
