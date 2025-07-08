@@ -1,5 +1,7 @@
 // adding first n numbers using recursion 
 
+// is vale case mai global variable ka use krke solve kiya hai
+
 #include<iostream>
 
 using namespace std;
